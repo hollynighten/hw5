@@ -6,7 +6,6 @@
 img {width:200px;
 height:100px;}
 .first-picture {
-  display: flex;
   padding-right:550px;
 }
 .header-content {
