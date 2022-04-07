@@ -3,69 +3,212 @@
 *:after {
   box-sizing: border-box;
 }
-img {width:200px;
-height:100px;}
+.image1 {
+  width: 200px;
+  height: 100px;
+}
 .first-picture {
-  margin-right:550px;
+  margin-left: -270px;
 }
 .header-content {
   background-color: rgb(179, 146, 0);
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top:15px;
-  padding-bottom:15px;
-  width:1123px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 1123px;
 }
 .item {
   display: flex;
   justify-content: flex-end;
-  padding-right:10px;
   font-size: 16pt;
   word-spacing: 15px;
+  margin-right: -250px;
 }
-.header {display: flex;
-  justify-content:center;}
-.hw5 {background-color: black;
-  
+.header {
+  display: flex;
+  justify-content: center;
 }
-
-.aside1 {width:210px;
-  height:700px;
-background-color: blueviolet;
-order:1;
-text-align:center;}
-
-.aside2 {width:210px;
-  height:700px;
-background-color: blueviolet;
-order:3;
-text-align:center;}
-
-.text {display:block;
-  height:700px; 
-background-color: white;
-width:703px;
-order:2;
-padding-left:15px;
-padding-right:15px;
-text-align:center;
+.hw5 {
+  background-color: black;
 }
 
-  .main-content {display:flex;
-justify-content: flex-start;}
-
-.main {display:flex;
-justify-content:center;}
-.footer {background-color: greenyellow;
-width:1123px;
-display:flex;
-justify-content:center;}
-.footer-text {display:flex;
-height: 105px;
-justify-content:center;
-align-items:center;
-font-size: 16pt;
+.aside1 {
+  width: 210px;
+  height: 700px;
+  background-color: blueviolet;
+  order: 1;
+  text-align: center;
 }
-.mainfooter {display:flex;
-justify-content:center;}
+
+.aside2 {
+  width: 210px;
+  height: 700px;
+  background-color: blueviolet;
+  order: 3;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  height: 700px;
+  background-color: white;
+  width: 703px;
+  order: 2;
+  padding-left: 15px;
+  padding-right: 15px;
+  flex-direction: column;
+}
+
+.maintext {
+  text-align: center;
+}
+
+span {
+  font-weight: bold;
+  font-size: 24px;
+}
+.blocks {
+  width: 703px;
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block1 {
+  width: 200px;
+  height: 250px;
+  border: solid;
+  border-radius: 25px;
+  border-color: blueviolet;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.block2 {
+  width: 200px;
+  height: 250px;
+  border: solid;
+  border-radius: 25px;
+  border-color: blueviolet;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.block3 {
+  width: 200px;
+  height: 250px;
+  border: solid;
+  border-radius: 25px;
+  border-color: blueviolet;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.block4 {
+  width: 200px;
+  height: 250px;
+  border: solid;
+  border-radius: 25px;
+  border-color: blueviolet;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.block5 {
+  width: 200px;
+  height: 250px;
+  border: solid;
+  border-radius: 25px;
+  border-color: blueviolet;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.block6 {
+  width: 200px;
+  height: 250px;
+  border: solid;
+  border-radius: 25px;
+  border-color: blueviolet;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.blocktext > p {
+  font-weight: 900;
+  font-family: fantasy;
+}
+
+.image2 {
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  background-color: grey;
+  margin-top: 8px;
+}
+.blocktext {
+  font-size: 8pt;
+  width: 150px;
+  margin-top: 10px;
+  text-align: center;
+}
+.button {
+  background-color: blueviolet;
+  border-radius: 19px;
+  padding: 2px 14px 2px 14px;
+  margin: 210px 2px;
+  color: white;
+  position: absolute;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+.footer {
+  background-color: greenyellow;
+  width: 1123px;
+  display: flex;
+  justify-content: center;
+}
+.footer-text {
+  display: flex;
+  height: 105px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16pt;
+}
+.mainfooter {
+  display: flex;
+  justify-content: center;
+}
+@keyframes bounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  80% {
+    transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+.button:hover {
+  animation: bounce 1s;
+  cursor: pointer;
+}
