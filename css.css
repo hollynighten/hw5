@@ -20,12 +20,11 @@ height:60px; width:100px;}}
   height:80%;
 }
 @media (min-width: 1200px) {.image1 {height:90%;}}
-.hw5 {display:flex;
-flex-direction:column;
+.hw5 {
 align-items:center;
 height:840px;
 }
-@media (max-width: 576px) {.hw5 {height:680px;}}
+@media (max-width: 576px) {.hw5 {height:1150px;}}
 @media (min-width: 1200px) {.hw5 {height:1150px;}}
 
 .header-content {
@@ -35,8 +34,9 @@ height:840px;
   width:100%;
   height:12%;
   align-items:center;
-}
 
+}
+@media (max-width: 576px) {.header-content {height:8%;}}
 .item {
  display:flex;
   word-spacing: 15px;
@@ -98,6 +98,7 @@ height:840px;
   text-align: center;
   font-size:9pt;
 }
+@media (max-width: 576px) {.maintext {font-size:9pt;}}
 @media (min-width: 577px) and (max-width: 767px) {.maintext {font-size:11pt;} }
 @media (min-width: 767px) and (max-width: 992px) { .maintext {font-size:12pt;}} 
 @media (min-width: 993px) and (max-width: 1200px) { .maintext {font-size:12pt;}}
@@ -107,13 +108,14 @@ span {
   font-weight: bold;
   font-size: 12px;
 }
+@media (max-width: 576px) {.span {font-size:14pt;}}
 @media (min-width: 577px) and (max-width: 767px) {.span {font-size:17pt;} }
 @media (min-width: 767px) and (max-width: 992px) { span {font-size:18pt;}} 
 @media (min-width: 993px) and (max-width: 1200px) { span {font-size:18pt;}}
 @media (min-width: 1200px) {span {font-size:28pt;}} 
 .blocks {
   
-  min-height: 80%;
+  height: 80%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -134,6 +136,7 @@ span {
   
   
 }
+@media (max-width: 576px) {.block1 {height:260px; width:45%;}}
 @media (min-width: 577px) and (max-width: 767px) {.block1 {height:250px;} }
 
   @media (min-width: 767px) and (max-width: 992px) { .block1 {height:250px;
@@ -156,6 +159,7 @@ span {
   position:relative;
   
 }
+@media (max-width: 576px) {.block2 {height:260px; width:45%;}}
 @media (min-width: 577px) and (max-width: 767px) {.block2 {height:250px;} }
 
   @media (min-width: 767px) and (max-width: 992px) { .block2 {min-height:250px;
@@ -179,6 +183,7 @@ span {
   position:relative;
   
 }
+@media (max-width: 576px) {.block3 {height:260px; width:45%;}}
 @media (min-width: 577px) and (max-width: 767px) {.block3 {height:250px;} }
 
   @media (min-width: 767px) and (max-width: 992px) { .block3 {min-height:250px;
@@ -202,6 +207,7 @@ span {
  
  
 }
+@media (max-width: 576px) {.block4 {height:260px;width:45%;}}
 @media (min-width: 577px) and (max-width: 767px) {.block4 {height:250px;} }
 
   @media (min-width: 767px) and (max-width: 992px) { .block4 {min-height:250px;
@@ -223,6 +229,7 @@ span {
   position:relative;
   
 }
+@media (max-width: 576px) {.block5 {height:260px;width:45%;}}
 @media (min-width: 577px) and (max-width: 767px) {.block5 {height:250px;} }
 
   @media (min-width: 767px) and (max-width: 992px) { .block5 {min-height:250px;
@@ -244,6 +251,7 @@ span {
   position:relative;
   
 }
+@media (max-width: 576px) {.block6 {height:260px; width:45%;}}
 @media (min-width: 577px) and (max-width: 767px) {.block6 {height:250px;} }
 
   @media (min-width: 767px) and (max-width: 992px) { .block6 {min-height:250px;
@@ -264,6 +272,7 @@ span {
   background-color: grey;
   margin-top: 8px;
 }
+@media (max-width: 576px) {.image2 {height: 60px; width:60px;}}
 @media (min-width: 577px) and (max-width: 767px) {.image2 {height:70px;
   width:70px;}}
   @media (min-width: 767px) and (max-width: 992px) { .image2 {height:80px;
@@ -277,6 +286,7 @@ span {
   font-size: 9pt;
   text-align: center;
 }
+@media (max-width: 576px) {.blocktexts {font-size:7pt;}}
 @media (min-width: 577px) and (max-width: 767px){ .blocktext {font-size:8pt;}} 
 @media (min-width: 767px) and (max-width: 992px) { .blocktext {font-size:9pt;}} 
 @media (min-width: 993px) and (max-width: 1200px) { .blocktext {font-size:10pt;}}
@@ -298,6 +308,7 @@ span {
   justify-content: center;
   height:83%;
 }
+@media (max-width: 576px) {.main {height:87%;}}
 .footer {
  
   display: flex;
@@ -434,7 +445,8 @@ height:5%;}
 }
 
 .hamburger-menu {display:block;
-  position:absolute;
-right:50px;;
-top:-10px;}
+  position:relative;
+top:-20px;
+margin-left:auto;
+right:50px;}
 @media (min-width: 577px) { .hamburger-menu {display:none; } }
